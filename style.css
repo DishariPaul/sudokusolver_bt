@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #316f8a, #5fbddd, #1181b1);
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+/* Title */
+h1 {
+    position: absolute;
+    left: 1;
+    top: 0;
+    color: #000915;
+    letter-spacing: 2px;
+}
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+/* Grid outer box */
+#grid {
+    background-color: #010812d9;
+    border: 20px solid #08121f;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+/* Filled cells (user input) */
+.filled {
+    background-color: #1e90ff;
+    color: white;
+    font-weight: bold;
+}
+/* Table */
+table {border-collapse: collapse;}
+/* Cells */
+td {border: 2px solid #02172ceb;}
+/* Input boxes */
+input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #163553b7;
+    color: #e6f1ff;
+    transition: 0.2s ease;
+}
+/* Hover effect */
+input:hover {background-color: #163a5f;}
+/* Focus effect */
+input:focus {
+    background-color: #1e4d7a;
+    box-shadow: inset 0 0 5px #4da6ff;
+}
+/* 3x3 box borders */
+tr:nth-child(3n) td {border-bottom: 4px solid #010b15;}
+td:nth-child(3n) {border-right: 4px solid #010b15;}
+tr:nth-child(1) td {border-top: 4px solid #010b15;}
+td:nth-child(1) {border-left: 4px solid #010b15;}
+/* Buttons container */
+.buttons {margin-top: 25px;}
+/* Buttons */
+#solve {
+    padding: 12px 25px;
+    margin: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #1e90ff, #005bea);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+/* Hover */
+#solve:hover {
+    background: linear-gradient(135deg, #05396c, #03255b);
+    transform: scale(1.05);
+}
+#clear{
+    padding: 10px 25px;
+    margin: 8px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #051317;
+    color: #051317;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+#clear:hover{
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #1e90ff, #005bea);
+    color: white;
+    border: #005bea;
+}
+/* Clear button different shade */
+button:nth-child(2) {background: linear-gradient(135deg, #4facfe, #00c6ff);}
+button:disabled {
+    background: #555;
+    cursor: none;
+    opacity: 0.6;
+}
+#successBanner {
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #6ae0da, #44f1d2);
+    color: rgb(1, 11, 9);
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: top 0.5s ease;
+    z-index: 1000;
+}
+
+
+
+
